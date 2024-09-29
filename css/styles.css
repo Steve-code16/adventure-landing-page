@@ -83,8 +83,12 @@ section {
 }
 
 .home .content {
+  display: none;
+}
+
+.home .content.active {
+  display: block;
   z-index: 2;
-  /* color: #fff; */
   width: 70%;
   margin-top: 50px;
 }
@@ -167,8 +171,24 @@ section {
   cursor: pointer;
 }
 
+.slider-nav .nav-btn.active {
+  background-color: #2696e9;
+}
+
 .slider-nav .nav-btn:hover {
   transform: scale(1.2);
+}
+
+.video-slide {
+  position: absolute;
+  width: 100%;
+  clip-path: circle(0% at 0 50%);
+}
+
+.video-slide.active {
+  clip-path: circle(150% at 0 50%);
+  transition: 0.5s ease-in;
+  transition-property: clip-path;
 }
 
 @media screen and (max-width: 1040px) {
