@@ -146,6 +146,31 @@ section {
   object-fit: cover;
 }
 
+.slider-nav {
+  z-index: 2;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(80px);
+  gap: 20px;
+  margin-bottom: 12px;
+}
+
+.slider-nav .nav-btn {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.slider-nav .nav-btn:hover {
+  transform: scale(1.2);
+}
+
 @media screen and (max-width: 1040px) {
   header {
     padding: 12px 20px;
