@@ -130,6 +130,11 @@ section {
     padding: 12px 20px;
   }
 
+  header .navigation {
+    position: relative;
+    display: none;
+  }
+
   section {
     padding: 100px 20px;
   }
